@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="JPush API" />
+
+            <TextView
+                android:id="@+id/push_state"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="获取Jpush状态" />
+
+            <TextView
+                android:id="@+id/push_get_register_id"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="获取JPush 注册ID" />
+
+            <TextView
+                android:id="@+id/push_stop"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="停止JPush" />
+
+            <TextView
+                android:id="@+id/push_resume"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="恢复JPush" />
+
+            <TextView
+                android:id="@+id/push_is_stop"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="是否JPush推送停止？" />
+
+            <TextView
+                android:id="@+id/push_silence"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="设置JPush静默时间" />
+
+            <TextView
+                android:id="@+id/push_allow_time"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="设置JPush允许推送时间" />
+
+            <TextView
+                android:id="@+id/push_channel"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="设置JPush Channel" />
+
+            <TextView
+                android:id="@+id/push_clear_all_push"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="清除所有JPush" />
+
+            <TextView
+                android:id="@+id/push_set_allow_save_mode"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="设置JPush省电模式" />
+
+            <TextView
+                android:id="@+id/push_set_max_num"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="设置JPush最近通知条数" />
+
+            <TextView
+                android:id="@+id/push_request_permission"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="请求JPush权限" />
+
+            <TextView
+                android:id="@+id/push_mobile"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="请求JPush手机号码（仅国内）" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="JPush别名API" />
+
+            <TextView
+                android:id="@+id/push_set_alias"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="设置JPush 别名" />
+
+            <TextView
+                android:id="@+id/push_delete_alias"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="删除JPush别名" />
+
+            <TextView
+                android:id="@+id/push_get_alias"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="获取JPush别名" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="JPush 本地通知 API" />
+
+            <TextView
+                android:id="@+id/push_send_local"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="发送JPush本地通知" />
+
+            <TextView
+                android:id="@+id/push_clear_all_local"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="清除JPush本地所有通知" />
+
+            <TextView
+                android:id="@+id/push_clear_one_local"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="清除JPush本地指定通知" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="JPush APP通知开关 API" />
+
+            <TextView
+                android:id="@+id/push_notice_state"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="获取手机是否通知开关" />
+
+            <TextView
+                android:id="@+id/push_go_to_setting"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="跳转系统APP设置" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="JPush 崩溃 API" />
+
+            <TextView
+                android:id="@+id/push_init_crash"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="初始化JPush崩溃上报" />
+
+            <TextView
+                android:id="@+id/push_stop_crash"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="停止JPush崩溃上报" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="JPush 标签 API" />
+
+            <TextView
+                android:id="@+id/push_set_tags"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="设置JPush用户标签" />
+
+            <TextView
+                android:id="@+id/push_add_tags"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="添加JPush用户标签" />
+
+            <TextView
+                android:id="@+id/push_delete_tags"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="删除JPush用户标签" />
+
+            <TextView
+                android:id="@+id/push_clean_all_tags"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="清除JPush用户所有标签" />
+
+            <TextView
+                android:id="@+id/push_get_all_tags"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="获取JPush用户所有标签" />
+
+            <TextView
+                android:id="@+id/push_get_tag_state"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="获取JPush用户与指定标签的状态" />
+
+            <TextView
+                android:id="@+id/push_get_valid_tags"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="获取JPush用户有效的标签" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

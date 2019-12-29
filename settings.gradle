@@ -1,0 +1,2 @@
+include ':app', ':jpushlib'
+rootProject.name='极光集成APP'
